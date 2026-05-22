@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "argala"
-version = "0.1.0"
+version = "0.0.0"
 description = "A developer-first, high-performance, deterministic reverse proxy middleware for AI agent tool execution"
 readme = "README.md"
 requires-python = ">=3.8"
