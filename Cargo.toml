@@ -1,0 +1,23 @@
+[package]
+name = "argala"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "A developer-first, high-performance, deterministic reverse proxy middleware for AI agent tool execution"
+repository = "https://github.com/yourusername/argala" # TODO: Update with actual repo
+keywords = ["ai", "security", "llm", "agent", "proxy"]
+categories = ["development-tools", "security"]
+
+[dependencies]
+pyo3 = { version = "0.22.6", features = ["extension-module"] }
+regex = "1.11"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+
+[lib]
+name = "argala"
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+module = "argala"

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "argala"
+version = "0.1.0"
+description = "A developer-first, high-performance, deterministic reverse proxy middleware for AI agent tool execution"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+authors = [
+    {name = "Your Name", email = "you@example.com"}
+]
+keywords = ["ai", "security", "llm", "agent", "proxy"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Rust",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/argala"
+
+[tool.maturin]
+module-name = "argala"
+# Skip the cargo build if we're just doing development
+# features = [""]
+
+[tool.maturin.distribution]
+# Additional options for building distributions

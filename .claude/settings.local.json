@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(code . *)",
+      "PowerShell(maturin develop *)",
+      "Bash(pip *)",
+      "Bash(maturin *)",
+      "Bash(rustc *)",
+      "Bash(PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1 pip install *)",
+      "Bash(cmd *)",
+      "Bash($PSE maturin *)"
+    ]
+  }
+}
