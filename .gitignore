@@ -11,9 +11,11 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+test/
 downloads/
 eggs/
 .eggs/
+.claude/
 lib/
 lib64/
 parts/

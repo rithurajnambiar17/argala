@@ -1,13 +1,4 @@
-[argala.metadata]
-version = "1.0.0"
-environment = "production"
 
-[tools.database_connector]
-allowed_methods = ["query_user", "update_ledger", "execute_sql_query"]
+[tools.run_sql_query]
+allowed_methods = ["run_sql_query"]
 denied_patterns = ["(?i)DROP", "(?i)DELETE", "(?i)TRUNCATE"]
-
-[tools.payment_gateway]
-allowed_methods = ["execute_payout"]
-[tools.payment_gateway.param_limits]
-amount = { max = 5000.00 }
-currency = { exact = "INR" }
